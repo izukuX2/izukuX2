@@ -55,7 +55,7 @@ class IzukuX2 {
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=izukuX2&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=c026d3&icon_color=7c3aed&text_color=ffffff&ring_color=c026d3" height="165"/>
+<img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=izukuX2&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=c026d3&icon_color=7c3aed&text_color=ffffff"/>
 &nbsp;&nbsp;
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=izukuX2&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=c026d3&text_color=ffffff" height="165"/>
 
