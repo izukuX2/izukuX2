@@ -4,7 +4,7 @@
 
 ![Banner](./banner.svg)
 ![Projects](./projects.svg)
-![Social](./social.svg)
+![Social](https://raw.githubusercontent.com/izukuX2/izukuX2/main/social.svg)
 
 </div>
 
