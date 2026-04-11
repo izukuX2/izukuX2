@@ -3,6 +3,7 @@
 <div align="center">
 
 ![Banner](./banner.svg)
+![Projects](./projects.svg)
 
 </div>
 
