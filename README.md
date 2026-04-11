@@ -3,10 +3,12 @@
 <div align="center">
 
 ![Banner](./banner.svg)
+![Stats](https://raw.githubusercontent.com/izukuX2/izukuX2/main/stats.svg)
+![Timeline](https://raw.githubusercontent.com/izukuX2/izukuX2/main/timeline.svg)
 ![Projects](./projects.svg)
 ![Social](https://raw.githubusercontent.com/izukuX2/izukuX2/main/social.svg)
-![Timeline](https://raw.githubusercontent.com/izukuX2/izukuX2/main/timeline.svg)
-![Stats](https://raw.githubusercontent.com/izukuX2/izukuX2/main/stats.svg)
+
+
 
 </div>
 
