@@ -29,33 +29,11 @@
 
 </div>
 
----
-
-## `// github_stats`
-
 <div align="center">
-
-![Stats](https://github-readme-stats.vercel.app/api?username=izukuX2&show_icons=true&hide_border=true&bg_color=0b0b0f&title_color=c9a84c&icon_color=b5000c&text_color=908880&ring_color=b5000c)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=izukuX2&layout=compact&hide_border=true&bg_color=0b0b0f&title_color=c9a84c&text_color=908880)
 
 [![Streak](https://streak-stats.demolab.com?user=izukuX2&hide_border=true&background=0b0b0f&ring=b5000c&fire=c9a84c&currStreakLabel=c9a84c&sideLabels=908880&dates=5a5450&sideNums=c9a84c)](https://git.io/streak-stats)
 
 </div>
-
----
-
-## `// mission_log`
-
-```
-[✓]  DONE        — Mastered web fundamentals · first real projects
-[✓]  DONE        — Built Full-Stack projects from scratch
-[◈]  IN PROGRESS — Specializing in Backend & system architecture
-[○]  QUEUED      — Ship a successful SaaS product
-[★]  FINAL BOSS  — Senior Dev · Class-A
-```
-
----
 
 <div align="center">
 
