@@ -69,8 +69,8 @@
     <text class="mono" x="44" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">zatsu</text>
 
     <!-- description -->
-    <text class="mono" x="44" y="90"  font-size="9" fill="#908880">A full-stack project management</text>
-    <text class="mono" x="44" y="102" font-size="9" fill="#908880">Manga reader for Android</text>
+    <text class="mono" x="44" y="90"  font-size="9" fill="#908880">Manga reader for Android</text>
+    <text class="mono" x="44" y="102" font-size="9" fill="#908880">open source</text>
 
     <!-- divider -->
     <rect x="44" y="112" width="228" height=".5" fill="#c9a84c" opacity=".12"/>
