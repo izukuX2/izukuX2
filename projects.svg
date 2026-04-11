@@ -66,18 +66,18 @@
     <rect x="30" y="50" width="256" height="1.5" rx="1" fill="#b5000c" opacity=".7"/>
 
     <!-- project name -->
-    <text class="mono" x="44" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">DevFlow</text>
+    <text class="mono" x="44" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">zatsu</text>
 
     <!-- description -->
     <text class="mono" x="44" y="90"  font-size="9" fill="#908880">A full-stack project management</text>
-    <text class="mono" x="44" y="102" font-size="9" fill="#908880">tool built with React + Node.js</text>
+    <text class="mono" x="44" y="102" font-size="9" fill="#908880">Manga reader for Android</text>
 
     <!-- divider -->
     <rect x="44" y="112" width="228" height=".5" fill="#c9a84c" opacity=".12"/>
 
     <!-- language dot + name -->
     <circle cx="50" cy="126" r="4" fill="#c9a84c"/>
-    <text class="mono" x="59" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">JavaScript</text>
+    <text class="mono" x="59" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">Kotlin</text>
 
     <!-- stars -->
     <text class="mono" x="180" y="129" font-size="9" fill="#c9a84c">★</text>
@@ -96,15 +96,15 @@
     <rect x="302" y="50" width="256" height="112" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".4" opacity=".9"/>
     <rect x="302" y="50" width="256" height="1.5" rx="1" fill="#b5000c" opacity=".7"/>
 
-    <text class="mono" x="316" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">PyScanner</text>
+    <text class="mono" x="316" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">Zatsu-Pares</text>
 
-    <text class="mono" x="316" y="90"  font-size="9" fill="#908880">CLI tool for automated code</text>
-    <text class="mono" x="316" y="102" font-size="9" fill="#908880">analysis and security scanning</text>
+    <text class="mono" x="316" y="90"  font-size="9" fill="#908880">Manga parsers library for Kotlin/JVM</text>
+    <text class="mono" x="316" y="102" font-size="9" fill="#908880">and Android</text>
 
     <rect x="316" y="112" width="228" height=".5" fill="#c9a84c" opacity=".12"/>
 
     <circle cx="322" cy="126" r="4" fill="#3b6bdf"/>
-    <text class="mono" x="331" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">Python</text>
+    <text class="mono" x="331" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">Kotlin</text>
 
     <text class="mono" x="452" y="129" font-size="9" fill="#c9a84c">★</text>
     <text class="mono" x="463" y="129" font-size="8.5" fill="#5a5450" letter-spacing=".5">18</text>
@@ -124,15 +124,15 @@
     <rect x="682" y="56" width="56" height="13" rx="2" fill="#b5000c" opacity=".85"/>
     <text class="mono" x="710" y="65.5" font-size="7" fill="#f0ece0" text-anchor="middle" letter-spacing="1.5">FEATURED</text>
 
-    <text class="mono" x="588" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">NexUI</text>
+    <text class="mono" x="588" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">AnimeHat</text>
 
-    <text class="mono" x="588" y="90"  font-size="9" fill="#908880">Minimal component library with</text>
-    <text class="mono" x="588" y="102" font-size="9" fill="#908880">dark-first design system</text>
+    <text class="mono" x="588" y="90"  font-size="9" fill="#908880">Discover, track, and watch your favorite anime with</text>
+    <text class="mono" x="588" y="102" font-size="9" fill="#908880">a state-of-the-art interface designed for Android.</text>
 
     <rect x="588" y="112" width="228" height=".5" fill="#c9a84c" opacity=".12"/>
 
     <circle cx="594" cy="126" r="4" fill="#61dafb"/>
-    <text class="mono" x="603" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">TypeScript</text>
+    <text class="mono" x="603" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">Dart</text>
 
     <text class="mono" x="724" y="129" font-size="9" fill="#c9a84c">★</text>
     <text class="mono" x="735" y="129" font-size="8.5" fill="#5a5450" letter-spacing=".5">87</text>
