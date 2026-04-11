@@ -1,25 +1,10 @@
-<!-- ══════════════════════════════════════════════════════ -->
-<!--              izukuX2 · GitHub Profile README          -->
-<!--          Ayanokoji Style · Class-D → Class-A          -->
-<!-- ══════════════════════════════════════════════════════ -->
-
 <div align="center">
 
-<img src="https://i.pinimg.com/736x/0f/c2/6f/0fc26f0fee5ede6ef34fbfa2e7b80af9.jpg" width="120" alt="Ayanokoji" style="border-radius:4px"/>
-
-```
-╔══════════════════════════════════════════╗
-║  izukuX2  ·  Class-D → Class-A Route    ║
-║  Full-Stack Dev  ·  Student  ·  Builder  ║
-╚══════════════════════════════════════════╝
-```
-
-*"لا أحتاج أن أُظهر قوتي لأثبت وجودي — النتائج تتحدث بدلاً عني."*
-― مستوحى من أيانوكوجي كيوتاكا
-
----
+![izukuX2 Banner](./banner.svg)
 
 </div>
+
+---
 
 ## `// whoami`
 
@@ -29,40 +14,16 @@ class izukuX2:
     role     = ["Full-Stack Developer", "Student", "Builder"]
     location = "Algeria 🇩🇿"
     status   = "Building in silence..."
-    
+
     stack = {
         "frontend" : ["HTML", "CSS", "JavaScript", "React"],
         "backend"  : ["Node.js", "Python"],
         "database" : ["MongoDB", "MySQL"],
         "tools"    : ["Git", "Linux", "Docker", "REST API"],
     }
-    
+
     def philosophy(self):
-        return "الكود لا يكذب — فقط النتائج تتكلم."
-```
-
----
-
-## `// skill_matrix`
-
-| القدرة | المستوى | التقدم |
-|--------|---------|--------|
-| HTML / CSS | ████████████ | Expert |
-| JavaScript | ██████████░░ | Advanced |
-| Python | █████████░░░ | Advanced |
-| React / Node | ████████░░░░ | Intermediate |
-| Databases | ███████░░░░░ | Intermediate |
-
----
-
-## `// mission_log`
-
-```
-[✓] DONE       — إتقان أساسيات الويب · أول مشاريع حقيقية
-[✓] DONE       — بناء مشاريع Full-Stack من الصفر
-[◈] ACTIVE     — التخصص في Backend وبنية الأنظمة
-[○] QUEUED     — نشر مشروع SaaS ناجح
-[★] FINAL BOSS — الوصول لـ Senior Dev · Class-A
+        return "Code doesn't lie — only results talk."
 ```
 
 ---
@@ -90,25 +51,37 @@ class izukuX2:
 
 <div align="center">
 
-![izukuX2's GitHub stats](https://github-readme-stats.vercel.app/api?username=izukuX2&show_icons=true&theme=dark&hide_border=true&bg_color=0d0d12&title_color=c9a84c&icon_color=b5000c&text_color=e8e4dc)
+![Stats](https://github-readme-stats.vercel.app/api?username=izukuX2&show_icons=true&theme=dark&hide_border=true&bg_color=0d0d12&title_color=c9a84c&icon_color=b5000c&text_color=e8e4dc)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=izukuX2&layout=compact&theme=dark&hide_border=true&bg_color=0d0d12&title_color=c9a84c&text_color=e8e4dc)
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=izukuX2&theme=dark&hide_border=true&background=0d0d12&ring=b5000c&fire=c9a84c&currStreakLabel=c9a84c)](https://git.io/streak-stats)
+[![Streak](https://streak-stats.demolab.com?user=izukuX2&theme=dark&hide_border=true&background=0d0d12&ring=b5000c&fire=c9a84c&currStreakLabel=c9a84c)](https://git.io/streak-stats)
 
 </div>
+
+---
+
+## `// mission_log`
+
+```
+[✓] DONE       — Mastered web fundamentals · first real projects
+[✓] DONE       — Built Full-Stack projects from scratch
+[◈] ACTIVE     — Specializing in Backend & system architecture
+[○] QUEUED     — Ship a successful SaaS product
+[★] FINAL BOSS — Senior Dev · Class-A
+```
 
 ---
 
 <div align="center">
 
 ```
-┌─────────────────────────────────────────┐
-│  "العظيم لا يُعلن عن نفسه، يُثبت نفسه" │
-│                          — izukuX2      │
-└─────────────────────────────────────────┘
+┌──────────────────────────────────────────────────┐
+│  "The one who shouts his capabilities             │
+│   hasn't used them yet."   — Ayanokoji Kiyotaka  │
+└──────────────────────────────────────────────────┘
 ```
 
-![Profile views](https://komarev.com/ghpvc/?username=izukuX2&color=b5000c&style=flat-square&label=OBSERVERS)
+![Views](https://komarev.com/ghpvc/?username=izukuX2&color=b5000c&style=flat-square&label=OBSERVERS)
 
 </div>
