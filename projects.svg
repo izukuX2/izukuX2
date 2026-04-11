@@ -126,8 +126,8 @@
 
     <text class="mono" x="588" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">AnimeHat</text>
 
-    <text class="mono" x="588" y="90"  font-size="9" fill="#908880">Discover, track, and watch your favorite anime with</text>
-    <text class="mono" x="588" y="102" font-size="9" fill="#908880">a state-of-the-art interface designed for Android.</text>
+    <text class="mono" x="588" y="90"  font-size="9" fill="#908880">Discover and watch your favorite anime</text>
+    <text class="mono" x="588" y="102" font-size="9" fill="#908880">for Android.</text>
 
     <rect x="588" y="112" width="228" height=".5" fill="#c9a84c" opacity=".12"/>
 
