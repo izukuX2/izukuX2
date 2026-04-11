@@ -11,41 +11,6 @@
 
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════════╗
-║   "The one who shouts his capabilities                   ║
-║    hasn't used them yet."     — Ayanokoji Kiyotaka       ║
-╚══════════════════════════════════════════════════════════╝
-```
-
-</div>
-
----
-
-## `// whoami`
-
-```python
-class izukuX2:
-    name       = "izukuX2"
-    role       = ["Full-Stack Developer", "Student", "Builder"]
-    location   = "Algeria 🇩🇿"
-    status     = "Building in silence..."
-    philosophy = "Code doesn't lie — only results talk."
-
-    stack = {
-        "frontend" : ["HTML", "CSS", "JavaScript", "React"],
-        "backend"  : ["Node.js", "Python"],
-        "database" : ["MongoDB", "MySQL"],
-        "tools"    : ["Git", "Linux", "Docker", "REST API"],
-    }
-```
-
----
-
-## `// tech_stack`
-
-<div align="center">
-
 ![HTML5](https://img.shields.io/badge/HTML5-0b0b0f?style=flat-square&logo=html5&logoColor=b5000c)
 ![CSS3](https://img.shields.io/badge/CSS3-0b0b0f?style=flat-square&logo=css3&logoColor=c9a84c)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0b0b0f?style=flat-square&logo=javascript&logoColor=c9a84c)
