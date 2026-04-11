@@ -4,6 +4,7 @@
 
 ![Banner](./banner.svg)
 ![Projects](./projects.svg)
+![Social](./social.svg)
 
 </div>
 
