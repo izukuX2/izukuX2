@@ -1,102 +1,100 @@
+<!-- ══════════════════════════════════════════════════════ -->
+<!--              izukuX2 · GitHub Profile README          -->
+<!--          Ayanokoji Style · Class-D → Class-A          -->
+<!-- ══════════════════════════════════════════════════════ -->
+
 <div align="center">
 
-<!-- Animated header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:c026d3,100:db2777&height=200&section=header&text=izukuX2&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Developer%20%7C%20Manga%20%26%20Anime%20Apps&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://i.pinimg.com/736x/0f/c2/6f/0fc26f0fee5ede6ef34fbfa2e7b80af9.jpg" width="120" alt="Ayanokoji" style="border-radius:4px"/>
 
-<!-- Profile views counter -->
-[![](https://visitcount.itsvg.in/api?id=izukuX2&icon=6&color=6)](https://visitcount.itsvg.in)
+```
+╔══════════════════════════════════════════╗
+║  izukuX2  ·  Class-D → Class-A Route    ║
+║  Full-Stack Dev  ·  Student  ·  Builder  ║
+╚══════════════════════════════════════════╝
+```
 
-<!-- Typing animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=C026D3&center=true&vCenter=true&random=false&width=500&lines=Hey+there!+I'm+izuku+👋;Building+cool+stuff+🚀;Manga+%26+Anime+apps+lover+📱;Always+learning+new+things+🌱)](https://git.io/typing-svg)
-
-</div>
+*"لا أحتاج أن أُظهر قوتي لأثبت وجودي — النتائج تتحدث بدلاً عني."*
+― مستوحى من أيانوكوجي كيوتاكا
 
 ---
 
-## 🧑‍💻 About Me
+</div>
 
-```dart
-class IzukuX2 {
-  String name     = "izuku";
-  String handle   = "@izukuX2";
-  
-  List<String> languages = ["Dart", "JavaScript", "HTML/CSS"];
-  List<String> interests = ["Manga Apps", "Anime", "Mobile Dev", "Extensions"];
-  
-  String currently = "Building manga & anime extensions 📖";
-  String learning  = "More Dart & Flutter 🎯";
-  
-  String instagram = "@izuku_ffx";
-}
+## `// whoami`
+
+```python
+class izukuX2:
+    name     = "izukuX2"
+    role     = ["Full-Stack Developer", "Student", "Builder"]
+    location = "Algeria 🇩🇿"
+    status   = "Building in silence..."
+    
+    stack = {
+        "frontend" : ["HTML", "CSS", "JavaScript", "React"],
+        "backend"  : ["Node.js", "Python"],
+        "database" : ["MongoDB", "MySQL"],
+        "tools"    : ["Git", "Linux", "Docker", "REST API"],
+    }
+    
+    def philosophy(self):
+        return "الكود لا يكذب — فقط النتائج تتكلم."
 ```
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## `// skill_matrix`
+
+| القدرة | المستوى | التقدم |
+|--------|---------|--------|
+| HTML / CSS | ████████████ | Expert |
+| JavaScript | ██████████░░ | Advanced |
+| Python | █████████░░░ | Advanced |
+| React / Node | ████████░░░░ | Intermediate |
+| Databases | ███████░░░░░ | Intermediate |
+
+---
+
+## `// mission_log`
+
+```
+[✓] DONE       — إتقان أساسيات الويب · أول مشاريع حقيقية
+[✓] DONE       — بناء مشاريع Full-Stack من الصفر
+[◈] ACTIVE     — التخصص في Backend وبنية الأنظمة
+[○] QUEUED     — نشر مشروع SaaS ناجح
+[★] FINAL BOSS — الوصول لـ Senior Dev · Class-A
+```
+
+---
+
+## `// tech_stack`
 
 <div align="center">
 
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-%23339933.svg?style=flat-square&logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=flat-square&logo=python&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=flat-square&logo=mongodb&logoColor=white)
+![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=flat-square&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat-square&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=flat-square&logo=docker&logoColor=white)
 
 </div>
 
 ---
 
-## 📊 GitHub Stats
+## `// github_stats`
 
 <div align="center">
 
-<img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=izukuX2&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=c026d3&icon_color=7c3aed&text_color=ffffff"/>
-&nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=izukuX2&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=c026d3&text_color=ffffff" height="165"/>
+![izukuX2's GitHub stats](https://github-readme-stats.vercel.app/api?username=izukuX2&show_icons=true&theme=dark&hide_border=true&bg_color=0d0d12&title_color=c9a84c&icon_color=b5000c&text_color=e8e4dc)
 
-<br/><br/>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=izukuX2&layout=compact&theme=dark&hide_border=true&bg_color=0d0d12&title_color=c9a84c&text_color=e8e4dc)
 
-<img src="https://streak-stats.demolab.com/?user=izukuX2&theme=tokyonight&hide_border=true&background=0d1117&ring=c026d3&fire=db2777&currStreakLabel=c026d3&sideLabels=7c3aed&currStreakNum=ffffff&sideNums=ffffff&dates=6b7280" width="49%"/>
-
-</div>
-
----
-
-## 🏆 Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=izukuX2&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=4" width="100%"/>
-
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/izukuX2/izukuX2/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/izukuX2/izukuX2/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/izukuX2/izukuX2/output/github-snake-dark.svg" />
-</picture>
-
-</div>
-
----
-
-## 📱 Connect With Me
-
-<div align="center">
-
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/izuku_ffx)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/izukuX2)
+[![GitHub Streak](https://streak-stats.demolab.com?user=izukuX2&theme=dark&hide_border=true&background=0d0d12&ring=b5000c&fire=c9a84c&currStreakLabel=c9a84c)](https://git.io/streak-stats)
 
 </div>
 
@@ -104,6 +102,13 @@ class IzukuX2 {
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:db2777,50:c026d3,100:7c3aed&height=100&section=footer" width="100%"/>
+```
+┌─────────────────────────────────────────┐
+│  "العظيم لا يُعلن عن نفسه، يُثبت نفسه" │
+│                          — izukuX2      │
+└─────────────────────────────────────────┘
+```
+
+![Profile views](https://komarev.com/ghpvc/?username=izukuX2&color=b5000c&style=flat-square&label=OBSERVERS)
 
 </div>
