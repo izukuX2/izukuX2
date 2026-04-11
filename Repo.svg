@@ -1,0 +1,149 @@
+<svg width="860" height="200" viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0b0f"/>
+      <stop offset="100%" stop-color="#130a08"/>
+    </linearGradient>
+    <linearGradient id="gold-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0b0b0f" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#c9a84c"/>
+      <stop offset="60%"  stop-color="#b5000c"/>
+      <stop offset="100%" stop-color="#0b0b0f" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .mono  { font-family: 'Courier New', Courier, monospace; }
+      .serif { font-family: Georgia, 'Times New Roman', serif; }
+
+      .fi0 { animation: fu .5s .0s  both; }
+      .fi1 { animation: fu .5s .12s both; }
+      .fi2 { animation: fu .5s .22s both; }
+      .fi3 { animation: fu .5s .32s both; }
+
+      @keyframes fu {
+        from { opacity:0; transform:translateY(5px); }
+        to   { opacity:1; transform:translateY(0); }
+      }
+
+      .glow { animation: glow 5s ease-in-out infinite; }
+      @keyframes glow {
+        0%,100% { opacity:.05; }
+        50%      { opacity:.10; }
+      }
+
+      .blink { animation: blink 2.5s 1s ease-in-out infinite; }
+      @keyframes blink {
+        0%,100% { opacity:1; }
+        50%      { opacity:.3; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="200" fill="url(#bg)" rx="6"/>
+  <rect width="860" height="200" fill="none" stroke="#c9a84c" stroke-width=".5" rx="6" opacity=".22"/>
+
+  <!-- Top / bottom accent lines -->
+  <rect x="0" y="0"   width="860" height="2" fill="url(#gold-line)"/>
+  <rect x="0" y="198" width="860" height="2" fill="url(#gold-line)" opacity=".45"/>
+
+  <!-- Corner brackets -->
+  <g stroke="#b5000c" stroke-width="1.5" fill="none" opacity=".6">
+    <path d="M14,26 L14,14 L26,14"/>
+    <path d="M846,26 L846,14 L834,14"/>
+    <path d="M14,174 L14,186 L26,186"/>
+    <path d="M846,174 L846,186 L834,186"/>
+  </g>
+
+  <!-- Section label -->
+  <text class="mono fi0" x="30" y="34" font-size="8" fill="#5a5450" letter-spacing="3">// PINNED PROJECTS</text>
+  <rect class="fi0" x="30" y="40" width="800" height=".5" fill="#c9a84c" opacity=".12"/>
+
+  <!-- ═══════════════ CARD 1 ═══════════════ -->
+  <g class="fi1">
+    <rect x="30" y="50" width="256" height="112" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".4" opacity=".9"/>
+
+    <!-- top accent line on card -->
+    <rect x="30" y="50" width="256" height="1.5" rx="1" fill="#b5000c" opacity=".7"/>
+
+    <!-- project name -->
+    <text class="mono" x="44" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">DevFlow</text>
+
+    <!-- description -->
+    <text class="mono" x="44" y="90"  font-size="9" fill="#908880">A full-stack project management</text>
+    <text class="mono" x="44" y="102" font-size="9" fill="#908880">tool built with React + Node.js</text>
+
+    <!-- divider -->
+    <rect x="44" y="112" width="228" height=".5" fill="#c9a84c" opacity=".12"/>
+
+    <!-- language dot + name -->
+    <circle cx="50" cy="126" r="4" fill="#c9a84c"/>
+    <text class="mono" x="59" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">JavaScript</text>
+
+    <!-- stars -->
+    <text class="mono" x="180" y="129" font-size="9" fill="#c9a84c">★</text>
+    <text class="mono" x="191" y="129" font-size="8.5" fill="#5a5450" letter-spacing=".5">42</text>
+
+    <!-- forks -->
+    <text class="mono" x="215" y="129" font-size="8.5" fill="#5a5450">⑂</text>
+    <text class="mono" x="227" y="129" font-size="8.5" fill="#5a5450" letter-spacing=".5">11</text>
+
+    <!-- live dot -->
+    <circle cx="258" cy="126" r="3.5" fill="#2a6b3a" class="blink"/>
+  </g>
+
+  <!-- ═══════════════ CARD 2 ═══════════════ -->
+  <g class="fi2">
+    <rect x="302" y="50" width="256" height="112" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".4" opacity=".9"/>
+    <rect x="302" y="50" width="256" height="1.5" rx="1" fill="#b5000c" opacity=".7"/>
+
+    <text class="mono" x="316" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">PyScanner</text>
+
+    <text class="mono" x="316" y="90"  font-size="9" fill="#908880">CLI tool for automated code</text>
+    <text class="mono" x="316" y="102" font-size="9" fill="#908880">analysis and security scanning</text>
+
+    <rect x="316" y="112" width="228" height=".5" fill="#c9a84c" opacity=".12"/>
+
+    <circle cx="322" cy="126" r="4" fill="#3b6bdf"/>
+    <text class="mono" x="331" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">Python</text>
+
+    <text class="mono" x="452" y="129" font-size="9" fill="#c9a84c">★</text>
+    <text class="mono" x="463" y="129" font-size="8.5" fill="#5a5450" letter-spacing=".5">18</text>
+
+    <text class="mono" x="487" y="129" font-size="8.5" fill="#5a5450">⑂</text>
+    <text class="mono" x="499" y="129" font-size="8.5" fill="#5a5450" letter-spacing=".5">5</text>
+
+    <circle cx="530" cy="126" r="3.5" fill="#2a6b3a" class="blink"/>
+  </g>
+
+  <!-- ═══════════════ CARD 3 ═══════════════ -->
+  <g class="fi3">
+    <rect x="574" y="50" width="256" height="112" rx="3" fill="#0e0c0a" stroke="#b5000c" stroke-width=".6" opacity=".9"/>
+    <rect x="574" y="50" width="256" height="1.5" rx="1" fill="#b5000c" opacity=".9"/>
+
+    <!-- "featured" badge -->
+    <rect x="682" y="56" width="56" height="13" rx="2" fill="#b5000c" opacity=".85"/>
+    <text class="mono" x="710" y="65.5" font-size="7" fill="#f0ece0" text-anchor="middle" letter-spacing="1.5">FEATURED</text>
+
+    <text class="mono" x="588" y="74" font-size="12" fill="#f0ece0" letter-spacing=".5" font-weight="bold">NexUI</text>
+
+    <text class="mono" x="588" y="90"  font-size="9" fill="#908880">Minimal component library with</text>
+    <text class="mono" x="588" y="102" font-size="9" fill="#908880">dark-first design system</text>
+
+    <rect x="588" y="112" width="228" height=".5" fill="#c9a84c" opacity=".12"/>
+
+    <circle cx="594" cy="126" r="4" fill="#61dafb"/>
+    <text class="mono" x="603" y="129" font-size="8.5" fill="#908880" letter-spacing=".5">TypeScript</text>
+
+    <text class="mono" x="724" y="129" font-size="9" fill="#c9a84c">★</text>
+    <text class="mono" x="735" y="129" font-size="8.5" fill="#5a5450" letter-spacing=".5">87</text>
+
+    <text class="mono" x="759" y="129" font-size="8.5" fill="#5a5450">⑂</text>
+    <text class="mono" x="771" y="129" font-size="8.5" fill="#5a5450" letter-spacing=".5">23</text>
+
+    <circle cx="802" cy="126" r="3.5" fill="#2a6b3a" class="blink"/>
+  </g>
+
+  <!-- Bottom label -->
+  <text class="mono" x="430" y="178" font-size="8" fill="#3a3430" text-anchor="middle" letter-spacing="2">github.com/izukuX2</text>
+
+</svg>
