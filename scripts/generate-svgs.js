@@ -23,6 +23,7 @@ query($login: String!) {
         stargazerCount
         forkCount
         isArchived
+        createdAt
         url
       }
     }
@@ -318,6 +319,119 @@ function makeStats(stats) {
 </svg>`;
 }
 
+// ─── TIMELINE SVG ─────────────────────────────────────────────────
+function makeTimeline(stats) {
+  const commits = stats.contributionsCollection.totalCommitContributions;
+  const W = 860, H = 260;
+
+  // حساب سنة البداية من أقدم ريبو
+  const repoYears = stats.repositories.nodes
+    .map(r => r.createdAt ? new Date(r.createdAt).getFullYear() : 9999)
+    .filter(y => y < 9999);
+  const startYear = repoYears.length ? Math.min(...repoYears) : 2022;
+  const currentYear = new Date().getFullYear();
+
+  // توليد النودات ديناميكياً حسب عدد السنين
+  const years = [];
+  for (let y = startYear; y <= currentYear; y++) years.push(y);
+
+  const nodeCount = Math.min(years.length, 5);
+  const nodes     = years.slice(0, nodeCount);
+  const spacing   = 770 / (nodeCount + 1);
+
+  const nodeLabels = [
+    { title: 'Started Coding', sub: 'HTML · CSS · JS' },
+    { title: 'Android Dev',    sub: 'Kotlin · Jetpack' },
+    { title: '1st OSS Project',sub: `zatsu · AnimeHat` },
+    { title: 'Full-Stack Jump', sub: 'React · Node · Python' },
+    { title: 'S-Rank Journey',  sub: `${commits}+ commits` },
+  ];
+
+  const nodesSVG = nodes.map((year, i) => {
+    const cx      = Math.round(50 + spacing * (i + 1));
+    const isLast  = i === nodes.length - 1;
+    const above   = i % 2 === 0;
+    const label   = nodeLabels[i] || { title: String(year), sub: '' };
+    const cardY   = above ? 60  : 160;
+    const lineY1  = above ? 133 : 143;
+    const lineY2  = above ? cardY + 56 : cardY;
+
+    return `
+  <circle cx="${cx}" cy="138" r="5" fill="${isLast ? '#c9a84c' : '#b5000c'}" opacity="${isLast ? '1' : '.85'}"/>
+  <line x1="${cx}" y1="${lineY1}" x2="${cx}" y2="${lineY2}" stroke="#b5000c" stroke-width=".6" stroke-dasharray="3 2" opacity=".5"/>
+  <rect x="${cx - 55}" y="${cardY}" width="110" height="56" rx="3" fill="#0e0c0a"
+    stroke="${isLast ? '#b5000c' : '#c9a84c'}" stroke-width="${isLast ? '.7' : '.4'}" opacity=".95"/>
+  <rect x="${cx - 55}" y="${cardY}" width="110" height="1.5" rx="1" fill="#b5000c" opacity="${isLast ? '.9' : '.65'}"/>
+  ${isLast ? `<rect x="${cx - 20}" y="${cardY + 4}" width="40" height="11" rx="2" fill="#b5000c" opacity=".85"/>
+  <text font-family="Courier New,monospace" x="${cx}" y="${cardY + 12}" font-size="6.5" fill="#f0ece0" text-anchor="middle" letter-spacing="1.5">NOW</text>` : ''}
+  <text font-family="Courier New,monospace" x="${cx}" y="${cardY + (isLast ? 30 : 22)}" font-size="8" fill="#c9a84c" text-anchor="middle" letter-spacing=".5">${year}</text>
+  <text font-family="Courier New,monospace" x="${cx}" y="${cardY + (isLast ? 43 : 35)}" font-size="7.5" fill="#f0ece0" text-anchor="middle">${label.title}</text>
+  <text font-family="Courier New,monospace" x="${cx}" y="${cardY + (isLast ? 54 : 47)}" font-size="7" fill="#5a5450" text-anchor="middle">${label.sub}</text>
+  <text font-family="Courier New,monospace" x="${cx}" y="158" font-size="7" fill="${isLast ? '#c9a84c' : '#3a3430'}" text-anchor="middle" opacity="${isLast ? '.5' : '1'}">${year}</text>`;
+  }).join('');
+
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+  ${DEFS('bgtl','gltl','bartl')}
+  ${FRAME('bgtl','gltl',W,H)}
+
+  <text x="700" y="230" font-family="Georgia,serif" font-size="140" fill="#c9a84c" opacity=".07">道</text>
+
+  <text font-family="Courier New,monospace" x="30" y="34" font-size="8" fill="#5a5450" letter-spacing="3">// JOURNEY / TIMELINE</text>
+  <rect x="30" y="40" width="800" height=".5" fill="#c9a84c" opacity=".12"/>
+
+  <rect x="50" y="138" width="770" height="1.5" rx="1" fill="#b5000c" opacity=".4"/>
+
+  ${nodesSVG}
+
+  <text font-family="Courier New,monospace" x="430" y="238" font-size="7.5" fill="#3a3430" text-anchor="middle" letter-spacing="2">github.com/${USERNAME}  ·  BUILDING IN SILENCE</text>
+</svg>`;
+}
+
+// ─── SOCIAL SVG ───────────────────────────────────────────────────
+function makeSocial(stats) {
+  const followers = stats.followers.totalCount;
+  const following = stats.following.totalCount;
+  const W = 860, H = 200;
+
+  // بيانات التواصل — عدّل الـ handles حسب حساباتك
+  const contacts = [
+    { label: 'GitHub',   handle: 'izukuX2',         color: '#c9a84c', icon: 'GH' },
+    { label: 'Telegram', handle: '@attoui_ishak',   color: '#3b83c8', icon: 'TG' },
+    { label: 'Discord',  handle: 'izuku_ffx',    color: '#5865f2', icon: 'DC' },
+    { label: 'Email',    handle: 'attouiishak14@gmail.com', color: '#c9a84c', icon: 'EM' },
+    { label: 'Location', handle: 'Algeria · DZ',   color: '#b5000c', icon: 'DZ' },
+  ];
+
+  const cardW = 148;
+  const cards = contacts.map((c, i) => {
+    const x       = 30 + i * (cardW + 14);
+    const isFeat  = i === 4;
+    const stroke  = isFeat ? '#b5000c' : '#c9a84c';
+    const sw      = isFeat ? '.6' : '.4';
+    return `
+  <rect x="${x}" y="52" width="${cardW}" height="110" rx="3" fill="#0e0c0a" stroke="${stroke}" stroke-width="${sw}"/>
+  <rect x="${x}" y="52" width="${cardW}" height="1.5" rx="1" fill="#b5000c" opacity="${isFeat ? '.9' : '.7'}"/>
+  <circle cx="${x + cardW/2}" cy="92" r="16" fill="#1c1814" stroke="${c.color}" stroke-width=".6"/>
+  <text font-family="Courier New,monospace" x="${x + cardW/2}" y="97" font-size="9" fill="${c.color}" text-anchor="middle" font-weight="bold">${c.icon}</text>
+  <text font-family="Courier New,monospace" x="${x + cardW/2}" y="121" font-size="8" fill="#f0ece0" text-anchor="middle" letter-spacing=".5">${c.label}</text>
+  <text font-family="Courier New,monospace" x="${x + cardW/2}" y="133" font-size="7" fill="${c.color}" text-anchor="middle" letter-spacing=".3">${c.handle.slice(0, 20)}</text>`;
+  }).join('');
+
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+  ${DEFS('bgsc','glsc','barsc')}
+  ${FRAME('bgsc','glsc',W,H)}
+
+  <text font-family="Courier New,monospace" x="30" y="34" font-size="8" fill="#5a5450" letter-spacing="3">// CONTACT &amp; SOCIAL</text>
+  <rect x="30" y="40" width="800" height=".5" fill="#c9a84c" opacity=".12"/>
+
+  ${cards}
+
+  <circle cx="30" cy="172" r="3.5" fill="#b5000c"/>
+  <text font-family="Courier New,monospace" x="40" y="176" font-size="8" fill="#5a5450" letter-spacing="1.5">ONLINE · DZ</text>
+  <text font-family="Courier New,monospace" x="830" y="176" font-size="8" fill="#5a5450" text-anchor="end" letter-spacing="1">${followers} followers · ${following} following</text>
+</svg>`;
+}
+
 // ─── MAIN ─────────────────────────────────────────────────────────
 import { writeFileSync } from 'fs';
 
@@ -327,5 +441,7 @@ const data = await fetchStats();
 writeFileSync('banner.svg',   makeBanner(data));
 writeFileSync('projects.svg', makeProjects(data.repositories.nodes));
 writeFileSync('stats.svg',    makeStats(data));
+writeFileSync('timeline.svg', makeTimeline(data));
+writeFileSync('social.svg',   makeSocial(data));
 
-console.log('✅  SVGs generated: banner.svg  projects.svg  stats.svg');
+console.log('✅  SVGs generated: banner.svg  projects.svg  stats.svg  timeline.svg  social.svg');
