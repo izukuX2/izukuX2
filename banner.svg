@@ -1,0 +1,174 @@
+<svg width="860" height="200" viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0d12"/>
+      <stop offset="100%" stop-color="#1a0a08"/>
+    </linearGradient>
+    <linearGradient id="topline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d0d12" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#c9a84c"/>
+      <stop offset="60%" stop-color="#b5000c"/>
+      <stop offset="100%" stop-color="#0d0d12" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="skillbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b5000c"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+    <clipPath id="avatarClip">
+      <rect x="24" y="36" width="96" height="128" rx="3"/>
+    </clipPath>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;family=Cinzel:wght@600&amp;display=swap');
+
+      .mono { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+      .serif { font-family: 'Cinzel', Georgia, serif; }
+
+      .fade-in { animation: fadeUp 0.7s ease both; }
+      .fade-in-1 { animation: fadeUp 0.7s 0.15s ease both; }
+      .fade-in-2 { animation: fadeUp 0.7s 0.3s ease both; }
+      .fade-in-3 { animation: fadeUp 0.7s 0.45s ease both; }
+      .fade-in-4 { animation: fadeUp 0.7s 0.6s ease both; }
+
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(8px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .bar-fill { animation: growBar 1.4s 0.8s cubic-bezier(.22,1,.36,1) both; }
+      @keyframes growBar {
+        from { width: 0; }
+      }
+
+      .shimmer {
+        animation: shimmer 3s 1.5s ease-in-out infinite;
+      }
+      @keyframes shimmer {
+        0%,100% { opacity: 0.07; }
+        50% { opacity: 0.13; }
+      }
+
+      .pulse {
+        animation: pulse 2s 1s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+
+      .topbar { animation: slideIn 1s ease both; }
+      @keyframes slideIn {
+        from { width: 0; }
+        to { width: 860; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="200" fill="url(#bg)" rx="6"/>
+  <rect width="860" height="200" fill="none" stroke="#c9a84c" stroke-width="0.5" rx="6" opacity="0.3"/>
+
+  <!-- Top shimmer line -->
+  <rect x="0" y="0" width="860" height="2" fill="url(#topline)" rx="1"/>
+
+  <!-- Decorative kanji bg -->
+  <text x="720" y="160" class="mono shimmer"
+    font-size="110" fill="#c9a84c" opacity="0.07"
+    font-family="serif">実</text>
+
+  <!-- Corner marks -->
+  <g stroke="#b5000c" stroke-width="1.5" fill="none" opacity="0.6">
+    <polyline points="14,14 14,24 24,24"/>
+    <polyline points="846,14 846,24 836,24"/>
+    <polyline points="14,186 14,176 24,176"/>
+    <polyline points="846,186 846,176 836,176"/>
+  </g>
+
+  <!-- Avatar frame -->
+  <rect x="22" y="34" width="100" height="132" rx="4" fill="#12100e" stroke="#c9a84c" stroke-width="1"/>
+  <image href="https://i.pinimg.com/736x/0f/c2/6f/0fc26f0fee5ede6ef34fbfa2e7b80af9.jpg"
+    x="24" y="36" width="96" height="128"
+    preserveAspectRatio="xMidYMid slice"
+    clip-path="url(#avatarClip)"/>
+  <!-- Avatar overlay tint -->
+  <rect x="24" y="36" width="96" height="128" rx="3" fill="#b5000c" opacity="0.08"/>
+
+  <!-- Rank badge -->
+  <rect x="44" y="148" width="56" height="16" rx="2" fill="#b5000c" opacity="0.85"/>
+  <text x="72" y="160" class="mono" font-size="9" fill="#f0ece0" text-anchor="middle" letter-spacing="2">CLASS-A</text>
+
+  <!-- ── RIGHT CONTENT ── -->
+
+  <!-- Name -->
+  <text x="150" y="68" class="serif fade-in"
+    font-size="28" fill="#f0ece0" font-weight="600" letter-spacing="1">izukuX2</text>
+
+  <!-- Role tag -->
+  <text x="152" y="88" class="mono fade-in-1"
+    font-size="10" fill="#b5000c" letter-spacing="2">FULL-STACK DEV · STUDENT · ALGERIA 🇩🇿</text>
+
+  <!-- Divider -->
+  <rect x="150" y="96" width="300" height="0.5" fill="#c9a84c" opacity="0.25" class="fade-in-1"/>
+
+  <!-- Bio -->
+  <text x="152" y="112" class="mono fade-in-2"
+    font-size="11" fill="#a09890" letter-spacing="0.5">Building in silence. The code speaks for itself.</text>
+
+  <!-- ── SKILL BARS ── -->
+  <g class="fade-in-3">
+    <!-- HTML/CSS -->
+    <text x="152" y="132" class="mono" font-size="9" fill="#6b6460" letter-spacing="1">HTML/CSS</text>
+    <rect x="210" y="124" width="160" height="4" rx="2" fill="#2a2420"/>
+    <rect x="210" y="124" width="144" height="4" rx="2" fill="url(#skillbar)" class="bar-fill"/>
+
+    <!-- JavaScript -->
+    <text x="152" y="148" class="mono" font-size="9" fill="#6b6460" letter-spacing="1">JAVASCRIPT</text>
+    <rect x="210" y="140" width="160" height="4" rx="2" fill="#2a2420"/>
+    <rect x="210" y="140" width="131" height="4" rx="2" fill="url(#skillbar)" class="bar-fill"/>
+
+    <!-- Python -->
+    <text x="152" y="164" class="mono" font-size="9" fill="#6b6460" letter-spacing="1">PYTHON</text>
+    <rect x="210" y="156" width="160" height="4" rx="2" fill="#2a2420"/>
+    <rect x="210" y="156" width="120" height="4" rx="2" fill="url(#skillbar)" class="bar-fill"/>
+
+    <!-- React/Node -->
+    <text x="152" y="180" class="mono" font-size="9" fill="#6b6460" letter-spacing="1">REACT/NODE</text>
+    <rect x="210" y="172" width="160" height="4" rx="2" fill="#2a2420"/>
+    <rect x="210" y="172" width="109" height="4" rx="2" fill="url(#skillbar)" class="bar-fill"/>
+  </g>
+
+  <!-- ── RIGHT PANEL: QUOTE + STATS ── -->
+  <g class="fade-in-4">
+    <!-- Vertical separator -->
+    <rect x="400" y="36" width="0.5" height="128" fill="#c9a84c" opacity="0.2"/>
+
+    <!-- Quote -->
+    <text x="420" y="60" class="mono" font-size="22" fill="#b5000c" opacity="0.4">"</text>
+    <text x="435" y="75" class="mono" font-size="10" fill="#a09890">The one who shouts his</text>
+    <text x="435" y="90" class="mono" font-size="10" fill="#a09890">capabilities hasn't used</text>
+    <text x="435" y="105" class="mono" font-size="10" fill="#a09890">them yet.</text>
+    <text x="435" y="122" class="mono" font-size="9" fill="#c9a84c" letter-spacing="1">— Ayanokoji Kiyotaka</text>
+
+    <!-- Divider -->
+    <rect x="420" y="132" width="200" height="0.5" fill="#c9a84c" opacity="0.15"/>
+
+    <!-- Stats row -->
+    <!-- Stat 1 -->
+    <text x="440" y="152" class="serif" font-size="18" fill="#c9a84c" text-anchor="middle">∞</text>
+    <text x="440" y="164" class="mono" font-size="8" fill="#5a5450" text-anchor="middle" letter-spacing="1">COMMITS</text>
+
+    <!-- Stat 2 -->
+    <text x="520" y="152" class="serif" font-size="18" fill="#c9a84c" text-anchor="middle">2+</text>
+    <text x="520" y="164" class="mono" font-size="8" fill="#5a5450" text-anchor="middle" letter-spacing="1">YRS EXP</text>
+
+    <!-- Stat 3 -->
+    <text x="600" y="152" class="serif" font-size="18" fill="#c9a84c" text-anchor="middle">S</text>
+    <text x="600" y="164" class="mono" font-size="8" fill="#5a5450" text-anchor="middle" letter-spacing="1">RANK</text>
+
+    <!-- Pulse dot -->
+    <circle cx="626" cy="175" r="4" fill="#b5000c" class="pulse"/>
+    <text x="635" y="178" class="mono" font-size="9" fill="#6b6460" letter-spacing="1">ONLINE</text>
+  </g>
+
+  <!-- Bottom line -->
+  <rect x="0" y="198" width="860" height="2" fill="url(#topline)" rx="1" opacity="0.5"/>
+</svg>
