@@ -1,177 +1,96 @@
 <svg width="860" height="220" viewBox="0 0 860 220" xmlns="http://www.w3.org/2000/svg">
+  
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0b0b0f"/>
-      <stop offset="100%" stop-color="#160808"/>
+      <stop offset="100%" stop-color="#130a08"/>
     </linearGradient>
-    <linearGradient id="gold-line" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%"   stop-color="#0b0b0f" stop-opacity="0"/>
       <stop offset="30%"  stop-color="#c9a84c"/>
-      <stop offset="55%"  stop-color="#b5000c"/>
+      <stop offset="60%"  stop-color="#b5000c"/>
       <stop offset="100%" stop-color="#0b0b0f" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#b5000c"/>
-      <stop offset="100%" stop-color="#c9a84c"/>
-    </linearGradient>
-    <linearGradient id="name-grad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#f0ece0"/>
+      <stop offset="0%" stop-color="#b5000c"/>
       <stop offset="100%" stop-color="#c9a84c"/>
     </linearGradient>
     <style>
-      .mono  { font-family: 'Courier New', Courier, monospace; }
-      .serif { font-family: Georgia, 'Times New Roman', serif; }
-
-      .fi0 { animation: fu .6s .00s both; }
-      .fi1 { animation: fu .6s .12s both; }
-      .fi2 { animation: fu .6s .24s both; }
-      .fi3 { animation: fu .6s .36s both; }
-      .fi4 { animation: fu .6s .50s both; }
-
-      @keyframes fu {
-        from { opacity:0; transform:translateY(6px); }
-        to   { opacity:1; transform:translateY(0);   }
-      }
-
-      .grow { animation: grow 1.3s .75s cubic-bezier(.22,1,.36,1) both; }
-      @keyframes grow { from { width:0; } }
-
-      .pulse { animation: pulse 2.2s 1s ease-in-out infinite; }
-      @keyframes pulse {
-        0%,100% { opacity:1; }
-        50%      { opacity:.3; }
-      }
-
-      .glow { animation: glow 5s ease-in-out infinite; }
-      @keyframes glow {
-        0%,100% { opacity:.06; }
-        50%      { opacity:.12; }
-      }
+      .mono { font-family: 'Courier New', Courier, monospace; }
     </style>
   </defs>
-
-  <!-- Background -->
+  
   <rect width="860" height="220" fill="url(#bg)" rx="6"/>
-  <rect width="860" height="220" fill="none" stroke="#c9a84c" stroke-width=".5" rx="6" opacity=".25"/>
-
-  <!-- Top / bottom accent lines -->
-  <rect x="0" y="0"     width="860" height="2.5" fill="url(#gold-line)"/>
-  <rect x="0" y="217.5" width="860" height="2.5" fill="url(#gold-line)" opacity=".5"/>
-
-  <!-- Background kanji -->
-  <text class="glow" x="620" y="190" font-family="Georgia,serif"
-    font-size="160" fill="#c9a84c">実</text>
-
-  <!-- Corner brackets -->
-  <g stroke="#b5000c" stroke-width="1.5" fill="none" opacity=".7">
-    <path d="M16,30 L16,16 L30,16"/>
-    <path d="M844,30 L844,16 L830,16"/>
-    <path d="M16,190 L16,204 L30,204"/>
-    <path d="M844,190 L844,204 L830,204"/>
+  <rect width="860" height="220" fill="none" stroke="#c9a84c" stroke-width=".5" rx="6" opacity=".22"/>
+  <rect x="0" y="0"   width="860" height="2" fill="url(#gl)"/>
+  <rect x="0" y="218" width="860" height="2" fill="url(#gl)" opacity=".45"/>
+  <g stroke="#b5000c" stroke-width="1.5" fill="none" opacity=".6">
+    <path d="M14,26 L14,14 L26,14"/>
+    <path d="M846,26 L846,14 L834,14"/>
+    <path d="M14,194 L14,206 L26,206"/>
+    <path d="M846,194 L846,206 L834,206"/>
   </g>
 
-  <!-- ════ LEFT: Avatar box (pure SVG silhouette) ════ -->
-  <rect x="28" y="28" width="102" height="164" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".7"/>
+  <text x="620" y="190" font-family="Georgia,serif" font-size="160" fill="#c9a84c" opacity=".08">実</text>
 
-  <!-- head -->
+  <!-- Avatar box -->
+  <rect x="28" y="28" width="102" height="164" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".7"/>
   <ellipse cx="79" cy="74" rx="21" ry="23" fill="#1c1814"/>
-  <!-- hair top -->
   <rect x="58" y="51" width="42" height="13" rx="3" fill="#141210"/>
-  <!-- side hair -->
-  <rect x="56" y="58" width="6"  height="20" rx="2" fill="#141210"/>
-  <rect x="117" y="58" width="6" height="20" rx="2" fill="#141210"/>
-  <!-- eyes -->
   <rect x="67" y="72" width="8" height="2.5" rx="1" fill="#c9a84c" opacity=".7"/>
   <rect x="83" y="72" width="8" height="2.5" rx="1" fill="#c9a84c" opacity=".7"/>
-  <!-- mouth line -->
-  <path d="M74,85 Q79,88 84,85" stroke="#6b5c50" stroke-width="1" fill="none"/>
-  <!-- uniform body -->
-  <path d="M50,107 L57,96 L79,102 L101,96 L108,107 L110,190 L48,190 Z"
-    fill="#12100e" stroke="#c9a84c" stroke-width=".4" opacity=".9"/>
-  <!-- collar -->
-  <path d="M70,96 L79,102 L88,96" stroke="#c9a84c" stroke-width=".6" fill="none" opacity=".5"/>
-  <!-- tie -->
+  <path d="M50,107 L57,96 L79,102 L101,96 L108,107 L110,190 L48,190 Z" fill="#12100e" stroke="#c9a84c" stroke-width=".4" opacity=".9"/>
   <path d="M75,96 L79,102 L83,96 L81,116 L79,122 L77,116 Z" fill="#b5000c" opacity=".8"/>
-  <!-- shoulder lines -->
-  <line x1="48" y1="108" x2="110" y2="108" stroke="#c9a84c" stroke-width=".4" opacity=".3"/>
-
-  <!-- CLASS-A badge -->
   <rect x="34" y="180" width="90" height="10" rx="2" fill="#b5000c" opacity=".9"/>
-  <text class="mono" x="79" y="188" font-size="7" fill="#f0ece0"
-    text-anchor="middle" letter-spacing="2.5">CLASS-A</text>
+  <text class="mono" x="79" y="188" font-size="7" fill="#f0ece0" text-anchor="middle" letter-spacing="2.5">CLASS-A</text>
 
-  <!-- ════ CENTER: Name + skills ════ -->
+  <!-- Name + role -->
+  <text class="mono" x="154" y="74" font-size="34" font-weight="bold" fill="#c9a84c" letter-spacing="1.5">izukuX2</text>
+  <text class="mono" x="156" y="94" font-size="9.5" fill="#b5000c" letter-spacing="2.5">FULL-STACK DEV  ·  STUDENT  ·  ALGERIA</text>
+  <rect x="155" y="103" width="260" height=".5" fill="#c9a84c" opacity=".2"/>
+  <text class="mono" x="156" y="118" font-size="10" fill="#908880">Building in silence. Code speaks for itself.</text>
 
-  <!-- Name -->
-  <text class="fi0 serif" x="154" y="74"
-    font-size="36" font-weight="bold" fill="url(#name-grad)" letter-spacing="1.5">izukuX2</text>
+  
+    <text class="mono" x="156" y="139" font-size="8" fill="#5a5450" letter-spacing=".8">TYPESCRIPT</text>
+    <rect x="242" y="133" width="175" height="3" rx="1.5" fill="#1e1c18"/>
+    <rect x="242" y="133" width="60" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
+    <text class="mono" x="423" y="139" font-size="7" fill="#c9a84c" opacity=".5">34%</text>
+    <text class="mono" x="156" y="155" font-size="8" fill="#5a5450" letter-spacing=".8">JAVASCRIPT</text>
+    <rect x="242" y="149" width="175" height="3" rx="1.5" fill="#1e1c18"/>
+    <rect x="242" y="149" width="42" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
+    <text class="mono" x="423" y="155" font-size="7" fill="#c9a84c" opacity=".5">24%</text>
+    <text class="mono" x="156" y="171" font-size="8" fill="#5a5450" letter-spacing=".8">HTML</text>
+    <rect x="242" y="165" width="175" height="3" rx="1.5" fill="#1e1c18"/>
+    <rect x="242" y="165" width="37" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
+    <text class="mono" x="423" y="171" font-size="7" fill="#c9a84c" opacity=".5">21%</text>
+    <text class="mono" x="156" y="187" font-size="8" fill="#5a5450" letter-spacing=".8">PYTHON</text>
+    <rect x="242" y="181" width="175" height="3" rx="1.5" fill="#1e1c18"/>
+    <rect x="242" y="181" width="12" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
+    <text class="mono" x="423" y="187" font-size="7" fill="#c9a84c" opacity=".5">7%</text>
 
-  <!-- Role -->
-  <text class="fi1 mono" x="156" y="94"
-    font-size="9.5" fill="#b5000c" letter-spacing="2.5">FULL-STACK DEV  ·  STUDENT  ·  ALGERIA</text>
-
-  <!-- Thin divider -->
-  <rect class="fi1" x="155" y="103" width="260" height=".5" fill="#c9a84c" opacity=".2"/>
-
-  <!-- Bio -->
-  <text class="fi2 mono" x="156" y="118"
-    font-size="10" fill="#908880">Building in silence. Code speaks for itself.</text>
-
-  <!-- Skill bars -->
-  <g class="fi3">
-    <text class="mono" x="156" y="140" font-size="8" fill="#5a5450" letter-spacing=".8">HTML/CSS</text>
-    <rect x="222" y="133" width="175" height="3" rx="1.5" fill="#1e1c18"/>
-    <rect x="222" y="133" width="158" height="3" rx="1.5" fill="url(#bar)" class="grow"/>
-    <text class="mono" x="402" y="139" font-size="7" fill="#c9a84c" opacity=".45">90%</text>
-
-    <text class="mono" x="156" y="156" font-size="8" fill="#5a5450" letter-spacing=".8">JAVASCRIPT</text>
-    <rect x="222" y="149" width="175" height="3" rx="1.5" fill="#1e1c18"/>
-    <rect x="222" y="149" width="143" height="3" rx="1.5" fill="url(#bar)" class="grow"/>
-    <text class="mono" x="402" y="155" font-size="7" fill="#c9a84c" opacity=".45">82%</text>
-
-    <text class="mono" x="156" y="172" font-size="8" fill="#5a5450" letter-spacing=".8">PYTHON</text>
-    <rect x="222" y="165" width="175" height="3" rx="1.5" fill="#1e1c18"/>
-    <rect x="222" y="165" width="131" height="3" rx="1.5" fill="url(#bar)" class="grow"/>
-    <text class="mono" x="402" y="171" font-size="7" fill="#c9a84c" opacity=".45">75%</text>
-
-    <text class="mono" x="156" y="188" font-size="8" fill="#5a5450" letter-spacing=".8">REACT/NODE</text>
-    <rect x="222" y="181" width="175" height="3" rx="1.5" fill="#1e1c18"/>
-    <rect x="222" y="181" width="119" height="3" rx="1.5" fill="url(#bar)" class="grow"/>
-    <text class="mono" x="402" y="187" font-size="7" fill="#c9a84c" opacity=".45">68%</text>
-  </g>
-
-  <!-- ════ Vertical divider ════ -->
+  <!-- Divider -->
   <rect x="444" y="34" width=".5" height="152" fill="#c9a84c" opacity=".15"/>
 
-  <!-- ════ RIGHT: Quote + stat cards ════ -->
-  <g class="fi4">
-    <!-- big quote mark -->
-    <text class="serif" x="460" y="68" font-size="30" fill="#b5000c" opacity=".3">"</text>
-    <text class="mono" x="476" y="70" font-size="10" fill="#a09888">The one who shouts his</text>
-    <text class="mono" x="476" y="85" font-size="10" fill="#a09888">capabilities hasn't used</text>
-    <text class="mono" x="476" y="100" font-size="10" fill="#a09888">them yet.</text>
-    <text class="mono" x="476" y="117" font-size="8.5" fill="#c9a84c" letter-spacing="1.5">— Ayanokoji Kiyotaka</text>
+  <!-- Quote + stats -->
+  <text x="460" y="68" font-family="Georgia,serif" font-size="30" fill="#b5000c" opacity=".3">"</text>
+  <text class="mono" x="476" y="70"  font-size="10" fill="#a09888">The one who shouts his</text>
+  <text class="mono" x="476" y="85"  font-size="10" fill="#a09888">capabilities hasn't used</text>
+  <text class="mono" x="476" y="100" font-size="10" fill="#a09888">them yet.</text>
+  <text class="mono" x="476" y="117" font-size="8.5" fill="#c9a84c" letter-spacing="1.5">— Ayanokoji Kiyotaka</text>
+  <rect x="458" y="128" width="376" height=".5" fill="#c9a84c" opacity=".12"/>
 
-    <rect x="458" y="128" width="376" height=".5" fill="#c9a84c" opacity=".12"/>
+  <rect x="460" y="138" width="110" height="46" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".4"/>
+  <text x="515" y="161" font-family="Georgia,serif" font-size="20" fill="#c9a84c" text-anchor="middle">149+</text>
+  <text class="mono" x="515" y="177" font-size="7" fill="#5a5450" text-anchor="middle" letter-spacing="1.5">COMMITS</text>
 
-    <!-- Stat card 1 -->
-    <rect x="460" y="138" width="110" height="46" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".4"/>
-    <text class="serif" x="515" y="161" font-size="22" fill="#c9a84c" text-anchor="middle">∞</text>
-    <text class="mono" x="515" y="177" font-size="7" fill="#5a5450" text-anchor="middle" letter-spacing="1.5">COMMITS</text>
+  <rect x="582" y="138" width="110" height="46" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".4"/>
+  <text x="637" y="161" font-family="Georgia,serif" font-size="20" fill="#c9a84c" text-anchor="middle">0+</text>
+  <text class="mono" x="637" y="177" font-size="7" fill="#5a5450" text-anchor="middle" letter-spacing="1.5">PULL REQ</text>
 
-    <!-- Stat card 2 -->
-    <rect x="582" y="138" width="110" height="46" rx="3" fill="#0e0c0a" stroke="#c9a84c" stroke-width=".4"/>
-    <text class="serif" x="637" y="161" font-size="22" fill="#c9a84c" text-anchor="middle">2+</text>
-    <text class="mono" x="637" y="177" font-size="7" fill="#5a5450" text-anchor="middle" letter-spacing="1.5">YRS EXP</text>
+  <rect x="704" y="138" width="110" height="46" rx="3" fill="#0e0c0a" stroke="#b5000c" stroke-width=".6"/>
+  <text x="759" y="161" font-family="Georgia,serif" font-size="22" fill="#b5000c" text-anchor="middle">S</text>
+  <text class="mono" x="759" y="177" font-size="7" fill="#5a5450" text-anchor="middle" letter-spacing="1.5">RANK</text>
 
-    <!-- Stat card 3 (accent red) -->
-    <rect x="704" y="138" width="110" height="46" rx="3" fill="#0e0c0a" stroke="#b5000c" stroke-width=".6"/>
-    <text class="serif" x="759" y="161" font-size="22" fill="#b5000c" text-anchor="middle">S</text>
-    <text class="mono" x="759" y="177" font-size="7" fill="#5a5450" text-anchor="middle" letter-spacing="1.5">RANK</text>
-
-    <!-- Online dot -->
-    <circle cx="466" cy="202" r="3.5" fill="#b5000c" class="pulse"/>
-    <text class="mono" x="476" y="206" font-size="8" fill="#5a5450" letter-spacing="1.5">ONLINE · DZ</text>
-  </g>
-
+  <circle cx="466" cy="202" r="3.5" fill="#b5000c"/>
+  <text class="mono" x="476" y="206" font-size="8" fill="#5a5450" letter-spacing="1.5">ONLINE · DZ</text>
 </svg>
