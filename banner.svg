@@ -53,16 +53,16 @@
   
     <text class="mono" x="156" y="139" font-size="8" fill="#5a5450" letter-spacing=".8">TYPESCRIPT</text>
     <rect x="242" y="133" width="175" height="3" rx="1.5" fill="#1e1c18"/>
-    <rect x="242" y="133" width="60" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
-    <text class="mono" x="423" y="139" font-size="7" fill="#c9a84c" opacity=".5">34%</text>
-    <text class="mono" x="156" y="155" font-size="8" fill="#5a5450" letter-spacing=".8">JAVASCRIPT</text>
+    <rect x="242" y="133" width="58" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
+    <text class="mono" x="423" y="139" font-size="7" fill="#c9a84c" opacity=".5">33%</text>
+    <text class="mono" x="156" y="155" font-size="8" fill="#5a5450" letter-spacing=".8">HTML</text>
     <rect x="242" y="149" width="175" height="3" rx="1.5" fill="#1e1c18"/>
-    <rect x="242" y="149" width="42" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
-    <text class="mono" x="423" y="155" font-size="7" fill="#c9a84c" opacity=".5">24%</text>
-    <text class="mono" x="156" y="171" font-size="8" fill="#5a5450" letter-spacing=".8">HTML</text>
+    <rect x="242" y="149" width="40" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
+    <text class="mono" x="423" y="155" font-size="7" fill="#c9a84c" opacity=".5">23%</text>
+    <text class="mono" x="156" y="171" font-size="8" fill="#5a5450" letter-spacing=".8">JAVASCRIPT</text>
     <rect x="242" y="165" width="175" height="3" rx="1.5" fill="#1e1c18"/>
-    <rect x="242" y="165" width="37" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
-    <text class="mono" x="423" y="171" font-size="7" fill="#c9a84c" opacity=".5">21%</text>
+    <rect x="242" y="165" width="40" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
+    <text class="mono" x="423" y="171" font-size="7" fill="#c9a84c" opacity=".5">23%</text>
     <text class="mono" x="156" y="187" font-size="8" fill="#5a5450" letter-spacing=".8">PYTHON</text>
     <rect x="242" y="181" width="175" height="3" rx="1.5" fill="#1e1c18"/>
     <rect x="242" y="181" width="12" height="3" rx="1.5" fill="#b5000c" opacity=".9"/>
